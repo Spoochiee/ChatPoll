@@ -1,0 +1,25 @@
+main: me.Spoochiee.ChatPoll.Main
+name: ChatPoll
+version: 1.0
+author: Spoochiee
+api-version: 1.15
+load: STARTUP
+
+commands:
+  pollcreate:
+    description: Creates a Poll
+    aliases: pc
+    permission: ChatPoll.create
+  pollvote:
+    description: Allows a player to vote on a poll
+    aliases: pv
+    permission: ChatPoll.vote
+  pollresults:
+    description: Opens the GUI of reuslts from that poll
+    aliases: pr
+    permission: ChatPoll.results
+  pollfinish:
+    description: Resets the current poll so a new one can be made
+    aliases: pf
+    permission: ChatPoll.finish
+  
