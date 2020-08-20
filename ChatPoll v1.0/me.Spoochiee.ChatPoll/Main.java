@@ -55,7 +55,7 @@ public class Main extends JavaPlugin implements Listener {
 		//Vote on current Poll Command
 		this.getCommand("pollvote").setExecutor(new PollVote(this, utils, pollvotegui));
 		//Reset Poll Command
-		this.getCommand("pollreset").setExecutor(new PollReset(this, pollresultsgui, pollvotegui, utils));
+		this.getCommand("pollfinish").setExecutor(new PollReset(this, pollresultsgui, pollvotegui, utils));
 		//Open Results GUI
 		this.getCommand("pollresults").setExecutor(new PollResults(this, utils, pollresultsgui));
 		
