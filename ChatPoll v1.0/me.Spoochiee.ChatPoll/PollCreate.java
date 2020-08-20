@@ -32,7 +32,7 @@ public class PollCreate implements CommandExecutor {
 				}
 				Player player = (Player) sender;
 				
-				if(player.hasPermission("ChatPoll.create")) {
+				if(player.hasPermission("ChatPoll.create") || player.hasPermission("ChatPoll.*")) {
 					if(args.length == 0) {
 						player.sendMessage(utils.chat("&5[&3ChatPoll&5]&rCorrect Usage: /pollcreate option1 option2"));
 						return true;
