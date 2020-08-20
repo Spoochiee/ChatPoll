@@ -28,7 +28,7 @@ public class PollResults implements CommandExecutor {
 			}
 			Player player = (Player) sender;
 			
-			if(player.hasPermission("ChatPoll.results")) {
+			if(player.hasPermission("ChatPoll.results") || player.hasPermission("ChatPoll.*")) {
 				if(this.plugin.activePoll == true) {
 					//Open Results GUI
 					this.pollresultsgui.createInv();
