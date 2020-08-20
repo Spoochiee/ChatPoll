@@ -29,7 +29,7 @@ public class PollVote implements CommandExecutor {
 			Player player = (Player) sender;
 			
 			if(this.plugin.activePoll == true) {
-				if(player.hasPermission("ChatPoll.vote")) {
+				if(player.hasPermission("ChatPoll.vote") || player.hasPermission("ChatPoll.*")) {
 					if(!this.plugin.playerVoted.containsKey(player.getName())) {
 						//Open Poll GUI
 						player.sendMessage(utils.chat("&5[&3ChatPoll&5]&rYou can now vote!"));
