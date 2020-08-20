@@ -111,6 +111,7 @@ public class PollVoteGui implements Listener {
 		
 		
 		//Vote for Option 2 
+		item.setType(Material.REDSTONE_BLOCK);
 		meta.setDisplayName(ChatColor.BOLD + "" + ChatColor.GOLD + "Option 2");
 		lore.clear();
 		lore.add(this.option2);
