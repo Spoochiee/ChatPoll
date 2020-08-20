@@ -9,17 +9,30 @@ commands:
   pollcreate:
     description: Creates a Poll
     aliases: pc
-    permission: ChatPoll.create
   pollvote:
     description: Allows a player to vote on a poll
     aliases: pv
-    permission: ChatPoll.vote
   pollresults:
     description: Opens the GUI of reuslts from that poll
     aliases: pr
-    permission: ChatPoll.results
   pollfinish:
     description: Resets the current poll so a new one can be made
     aliases: pf
-    permission: ChatPoll.finish
-  
+
+permissions:
+   ChatPoll.*:
+     description: Parent permission, gives player access to all commands
+     default: op
+     children:
+       ChatPoll.create:
+         description: Create a ChatPoll
+         default: op
+       ChatPoll.vote:
+         description: Allows the player to vote
+         default: op
+       ChatPoll.results:
+         description: Allows the player to see the ResultsGUI of the poll
+         default: op
+       ChatPoll.finish:
+         description: Allows the player to finish the poll so a new one can be started
+         default: op
