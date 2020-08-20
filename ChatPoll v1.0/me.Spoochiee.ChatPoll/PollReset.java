@@ -31,7 +31,7 @@ public class PollReset implements CommandExecutor {
 			}
 			Player player = (Player) sender;
 			
-			if(player.hasPermission("ChatPoll.finish")) {
+			if(player.hasPermission("ChatPoll.finish") || player.hasPermission("ChatPoll.*")) {
 				if(this.plugin.activePoll == true) {
 					//Tell the player they have reset the Poll
 					player.sendMessage(utils.chat("&5[&3ChatPoll&5]&rYou have reset the current poll, there is no longer any active polls!"));
