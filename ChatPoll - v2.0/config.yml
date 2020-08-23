@@ -1,0 +1,13 @@
+####################################################
+################### ChatPoll #######################
+####################################################
+################# VERSION:2.0 ######################
+####################################################
+
+
+# Set this to false to not send a player a message on
+# Join, if true a player will be told the options of 
+# the current poll
+playerjoin:
+  message:
+    enabled: true
